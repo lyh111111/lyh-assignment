@@ -1,0 +1,57 @@
+###
+GET http://localhost:8080/api/getAllTasks
+token:689a256a37ecd6464a1d868a3f6b967763b49fa9da93b274ddaeb7c00dfbcaeca1990ee1c3241ae2ab001d96f0d9f1ad
+
+###
+GET http://localhost:8080/api/task/2
+token:689a256a37ecd6464a1d868a3f6b967763b49fa9da93b274ddaeb7c00dfbcaeca1990ee1c3241ae2ab001d96f0d9f1ad
+
+###
+POST http://localhost:8080/api/admin/addTask
+token:689a256a37ecd6464a1d868a3f6b967763b49fa9da93b274ddaeb7c00dfbcaeca1990ee1c3241ae2ab001d96f0d9f1ad
+Content-Type: application/json
+
+{
+  "name": "LOL十周年盛典",
+  "description": "得皮肤！！得皮肤！！得皮肤！！得皮肤！！得皮肤！！得皮肤！！得皮肤！！",
+  "deadTime": "2019-07-11 17:00"
+}
+
+###
+GET http://localhost:8080/api/getAllTaskDetail
+token:689a256a37ecd6464a1d868a3f6b967763b49fa9da93b274ddaeb7c00dfbcaeca1990ee1c3241ae2ab001d96f0d9f1ad
+
+###
+GET http://localhost:8080/api/taskDetail/1
+token:689a256a37ecd6464a1d868a3f6b967763b49fa9da93b274ddaeb7c00dfbcaeca1990ee1c3241ae2ab001d96f0d9f1ad
+
+###
+GET http://localhost:8080/api/teacher/2/task
+token:689a256a37ecd6464a1d868a3f6b967763b49fa9da93b274ddaeb7c00dfbcaeca1990ee1c3241ae2ab001d96f0d9f1ad
+
+###
+POST http://localhost:8080/api/admin/addTaskDetail
+token:689a256a37ecd6464a1d868a3f6b967763b49fa9da93b274ddaeb7c00dfbcaeca1990ee1c3241ae2ab001d96f0d9f1ad
+Content-Type: application/json
+
+{
+  "teacher": {
+    "id": 2
+  },
+  "task": {
+    "id": 1
+  },
+  "content": "交实验报告！！！！交实验报告！！！！交实验报告！！！！交实验报告！！！！交实验报告！！！！",
+  "completeTime": "2019-06-13 19:00"
+}
+
+###
+POST http://localhost:8080/api/teacher/2/task/1/reply
+token:689a256a37ecd6464a1d868a3f6b967763b49fa9da93b274ddaeb7c00dfbcaeca1990ee1c3241ae2ab001d96f0d9f1ad
+Content-Type: application/json
+
+{
+  "reply": "我已收到！！！！！！马上交实验！！！！！！！！！"
+}
+
+###

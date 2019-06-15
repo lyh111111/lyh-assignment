@@ -1,0 +1,52 @@
+###
+POST http://localhost:8080/api/admin/addUser
+token:689a256a37ecd6464a1d868a3f6b967763b49fa9da93b274ddaeb7c00dfbcaeca1990ee1c3241ae2ab001d96f0d9f1ad
+Content-Type: application/json
+
+{
+  "name": "lyh",
+  "password": "111",
+  "title": "副教授",
+  "briefIntroduction": "全世界最帅的男人",
+  "phoneNumber": "17382867416",
+  "authority": 1
+}
+
+###
+POST http://localhost:8080/api/admin/addUser
+token:689a256a37ecd6464a1d868a3f6b967763b49fa9da93b274ddaeb7c00dfbcaeca1990ee1c3241ae2ab001d96f0d9f1ad
+Content-Type: application/json
+
+{
+  "name": "myw",
+  "password": "123456",
+  "title": "讲师",
+  "briefIntroduction": "全世界最丑的男人",
+  "phoneNumber": "17382867416",
+  "authority": 1
+}
+
+###
+POST http://localhost:8080/api/admin/updateUser
+token:689a256a37ecd6464a1d868a3f6b967763b49fa9da93b274ddaeb7c00dfbcaeca1990ee1c3241ae2ab001d96f0d9f1ad
+Content-Type: application/json
+
+{
+  "id": 3,
+  "name": "lyhnew",
+  "password": "111222",
+  "title": "教授",
+  "briefIntroduction": "全世界最最最最帅的男人",
+  "phoneNumber": "17382867416",
+  "authority": 1
+
+}
+
+###
+POST http://localhost:8080/api/admin/addInvigilate
+token:689a256a37ecd6464a1d868a3f6b967763b49fa9da93b274ddaeb7c00dfbcaeca1990ee1c3241ae2ab001d96f0d9f1ad
+Content-Type: application/json
+
+{
+  "name": "软件项目管理"
+}

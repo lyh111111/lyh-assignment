@@ -1,0 +1,36 @@
+###
+GET http://localhost:8080/api/getAllInvigilate
+token:43e9db3d950b58109d778c8254a92648f208380873678bbe58c51bb23365951a405f3ddd3d1fe9ee00cfefceb1404e2f
+###
+
+POST http://localhost:8080/api/admin/addInvigilateDetail
+token:e00f1108dc16edd92fe00cb3037a512a7717987b3e3f9daa5dba2cbbea3969acd0414d798e8535b19a97906099a45cb2
+Content-Type: application/json
+
+{
+  "teacher": {
+    "id": 2
+  },
+  "invigilate":{
+    "id": 2
+  },
+  "startTime":"2019-06-22 15:00",
+  "endTime": "2019-06-22 17:00",
+  "place": "丹青909"
+}
+
+###
+
+GET http://localhost:8080/api/getOnesAll/2
+token:ad2af90300d09e797aa3d5e27bdb3c9d333df31b10d012d58c50d635a368b356caef6da3e3628abe547f9c212d19a7c4
+
+###
+POST http://localhost:8080/api/deliberate
+token:e728b6bb192a502c0c891d4c8b82bbe2d1f6d11105ad4e78a53f4bfd920f2a4340d00c30d1c9e13707017e20f37a7da6
+Content-Type: application/json
+
+{
+  "id": 4
+}
+
+###
